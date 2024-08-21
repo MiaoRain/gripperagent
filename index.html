@@ -24,7 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Integrating Soft Gripper and Gripping Agent for
+Universal Robotic Grasping</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -56,64 +57,15 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhuowei Li</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Miao Zhang</a><sup>*</sup>,</span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">University of Nottingham Ningbo China</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
             </div>
           </div>
         </div>
@@ -121,24 +73,6 @@
     </div>
   </div>
 </section>
-
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,7 +82,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            It is crucial for successful operation that robots have the ability to flexibly grasp objects and accurately estimate the point of grasp in the field of general-purpose robotic gripping. To address these challenges, we present an Adaptive Rigid-Soft Gripping Agent (GAgent) that combines the adaptability of soft grippers with the cognitive capabilities of Multimodal Language Models (MMLMs) to effectively perform gripping tasks across diverse objects and environments. Our system features a variable-stiffness soft finger that integrates silicone and a Nitinol spring, supported by a rectangular structure and a double-tendon drive mechanism. This design ensures precise and reliable grasping. Additionally, we introduce task-focused prompts and step-level reasoning to fully leverage the generalization and reasoning capabilities of MMLMs. This enables accurate object texture recognition, categorization of objects into multiple hardness levels, and appropriate stiffness modulation to dynamically adjust the gripper's rigidity, ensuring precise grip point estimation. Moreover, our framework includes Data-Driven Gripper features, integrating a vector database and continuous feedback from past experiences to refine grasping strategies over time. Experimental results validate our system's effectiveness in grasping a wide range of objects under varying lighting conditions. These advancements collectively enhance the gripper's adaptability, reliability, and efficiency in handling a broad spectrum of objects, establishing it as a versatile solution for advanced robotic tasks.
           </p>
         </div>
       </div>
@@ -157,7 +91,21 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Single Image Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Single image container -->
+      <figure class="item">
+        <img src="gripper.png" alt="MY ALT TEXT" />
+        <figcaption>Three-finger hybrid gripper construction including the digital servo, silicone finger, cable-coiling drum, pressure sensor, and embedded spring, designed for precise and responsive motion control.Static analysis of hybrid finger. (a) Schematic diagram of forces on hybrid finger. (b) Diagram of tendon force analysis. The light green in the spring is the tendon. From point B to point A is the flexible section of the spring unit of length $l$ and conversely from point A to point B is the rigid section of the spring. The bottom figure analyzes the tendon forces on the finger in bending. $T$ is for tension in the tendon during transmission, $N$ represents the support force of the silicone surface on the spring, $f$ is the friction force，     $\theta$ denotes the bending angle of the flexible unit, $\beta$ is the angle between the friction force and the local coordinates, $\varphi$ is the angle between the front tension and the back tension.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+<!-- End Single Image Display -->
 
+  
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
